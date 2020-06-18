@@ -1,4 +1,4 @@
-; hello, world using syscalls
+; hello, world using syscall
 
 section .data
 
@@ -14,6 +14,7 @@ _main:
     mov rsi, msg
     mov rdx, msg.len
     syscall
+
     mov rax, 0x2000001 ; exit
     mov rdi, 0 ; success
     syscall

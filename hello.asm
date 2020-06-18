@@ -10,9 +10,12 @@ global _main
 
 _main:
     push rbp
+
     mov rax, 0
     mov rdi, msg
     call _printf
+
     pop rbp
-    mov rax, 0
+
+    mov rax, 0 ; success
     ret
