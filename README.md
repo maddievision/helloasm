@@ -1,13 +1,45 @@
+# helloasm
+
 very simple hello, world in x86_64 (aka, x64) assembly for macOS
 
-using `printf`
+## building
+
+you'll need nasm and the [Xcode Command Line Tools](https://macpaw.com/how-to/install-command-line-tools).
+
+to install nasm:
 
 ```
-make hello
+$ brew install nasm
 ```
 
-using syscalls (no C dependency)
+then you can build the executables!
 
 ```
-make helloraw
+$ make
+```
+
+## running
+
+hello, world using printf
+
+```
+$ ./hello
+hello ✨
+```
+
+hello, world using syscalls only
+
+```
+$ ./helloraw
+hello ✨
+```
+
+hello, name
+
+```
+$ ./helloname
+what's your name? sparkles
+
+hello, sparkles ✨
+
 ```
